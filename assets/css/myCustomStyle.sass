@@ -1,0 +1,505 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+li
+    list-style-type: none
+a
+    color: inherit
+    text-decoration: none
+img
+    overflow-clip-margin: content-box
+    overflow: clip
+h1,h2,h3,h4,h5,h6
+    font-weight: normal
+.d-none
+    display: none
+// bg-colors
+.bg-dark-blue
+    background-color: #1a294d
+// border
+.border-bot
+    border-bottom: solid 1px #f1f4f8
+.border-r
+    border-radius: 8px
+.border-r-top
+    border-radius: 10px 10px 0 0
+// overflow
+.overflow-height
+    height: 100vh
+    overflow-y: hidden
+.overflow-hidden
+    overflow: hidden
+// menu animation
+.show
+    width: 100%!important
+    height: 100vh!important
+    opacity: 1!important
+    top: 0!important
+    right: 0!important
+    z-index: 2!important
+.hidden
+    position: absolute
+    height: 0px
+    opacity: 0
+    z-index: -1 
+// main
+main
+    width: 100%
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+    overflow-x: hidden
+    header
+        width: 100%
+        padding: 20px 0px
+        position: relative
+        .logo
+            height: 43px
+            line-height: 43px
+            display: flex
+            justify-content: space-between
+            i
+                font-size: 35px
+                font-weight: bold
+                cursor: pointer
+            img
+                width: 100px
+        .menu
+            width: 50%
+            height: 50vh
+            overflow-y: scroll
+            position: absolute
+            top: -50px
+            right: -50px
+            opacity: 0
+            background-color: #fff
+            z-index: -2
+            transition: 1s
+            .landing
+                display: flex
+                justify-content: space-between
+            span, i
+                color: #506690
+                font-weight: bold
+                font-size: 25px
+                margin-right: 30px
+                cursor: pointer
+            a
+                color: #506690
+            nav
+                .menu-blocks
+                    display: flex
+                    border-bottom: solid 1px #f1f4f8
+                    margin-bottom: 30px
+                    div
+                        width: 50%
+                        ul
+                            li
+                                font-size: 18px
+                                font-weight: normal
+                                padding: 8px 0px
+                                h6
+                                    color: #335eea
+                                    font-size: 18px
+                                    padding-top: 15px
+                                a:hover
+                                    color: #335eea
+                    .leftSide, .rightSide
+                        display: inline
+                .account-block
+                    border-bottom: solid 1px #f1f4f8
+                    div
+                        position: relative
+                        h4
+                            line-height: 40px
+                            cursor: pointer
+                            i
+                                width: 40px
+                                height: 40px
+                                line-height: 40px
+                                text-align: center
+                                transition: .5s
+                                font-size: 16px
+                        ul
+                            transition: .5s ease-in-out
+                    span
+                        font-weight: normal
+                        font-size: 18px
+                        padding: 20px 0px
+                .doc-block
+                    div
+                        .documentation
+                            height: 60px
+                            display: flex
+                            align-items: center
+                            figure
+                                img
+                                    width: 55px
+                            ul
+                                padding-left: 20px
+                                li
+                                    line-height: 20px
+                                    h6
+                                        color: #335eea
+                                        font-size: 15px
+                                        padding-bottom: 8px
+    .banner
+        align-items: center
+        .banner-left-side
+            h1
+                font-size: 48px
+                span
+                    color: #335eea
+            p
+                // font-size: 20px
+                padding: 20px 0
+                line-height: 30px
+                color: #869ab8
+            .banner-buttons
+                .banner-btn-page
+                    background-color: #335eea
+                    color: #fff
+                .banner-btn-doc
+                    background-color: #eaeefd
+                    color: #335eea
+    .description
+            ul
+                li
+                    figure
+                        img
+                            width: 50px
+                    h3
+                        padding: 16px 0
+                    p
+                        color: #869ab8
+    .sub-sec
+        background-color: #f9fbfd
+        
+    .subscription
+        .sub-sec-left
+            background-color: #fff
+            &:hover
+                transform: translateY(-4px)
+                transition: .3s
+            ul
+                li
+                    padding: 15px 0
+                    position: relative
+                    &:first-child
+                        margin-top: 20px
+                    input
+                        height: 40px
+                        border: none
+                        outline: none
+                        background-color: inherit
+                        border-bottom: solid 1px #f1f4f8
+                        &:focus
+                            border-bottom: solid 1px #335eea
+                        &:focus + label
+                            font-size: 15px
+                            top: 0
+                            pointer-events: none
+                    label
+                        position: absolute
+                        top: 25px
+                        left: 0
+                        display: flex
+                        align-items: center
+                        cursor: text
+                        transition: .3s ease-in-out
+                    input, label
+                        font-size: 20px
+                    button
+                        width: 100%
+                        background-color: #42ba96
+                        color: #fff
+                        border: none
+                        padding: 20px 0px
+                        border-radius: 5px
+                        font-size: 18px
+                        margin-bottom: 20px
+                        &:hover
+                            background-color: #389e80
+                            cursor: pointer
+                            transform: translateY(-4px)
+                            transition: .3s
+        .sub-sec-right
+            h2
+                line-height: 35px
+                span
+                    width: 100%
+                    color: #42ba96
+            p
+                line-height: 36px
+                color: #869ab8
+            div
+                ul
+                    li
+                        display: flex
+                        color: #42ba96
+                        align-items: center
+                        i
+                            width: 30px
+                            height: 30px
+                            line-height: 30px
+                            text-align: center
+                            border-radius: 50%
+                            background-color: #e8f5f2
+                            margin-right: 20px
+                            font-size: 15px
+                        p
+                            color: #42ba96
+    .experience
+        .exp-text
+            h2
+                width: 100%
+                line-height: 35px
+                font-size: 21pt
+                display: flex
+                flex-wrap: wrap
+                span
+                    width: 100%
+                    padding-top: 10px
+                    color: #335eea
+            p
+                width: 100%
+                font-size: 16pt
+                color: #869ab8
+                padding: 20px 0
+            ul
+                width: 100%
+                li
+                    display: flex
+                    figure
+                        margin-right: 30px
+                        img
+                            width: 60px
+                    .exp-desc
+                        width: 90%
+                        h3
+                            font-size: 16pt
+        .exp-img
+            img
+                width: 100%
+                backface-visibility: hidden
+                transform: rotateY(-35deg) rotateX(15deg)
+                border-radius: 15px
+                box-shadow: 25px 60px 125px -25px rgba(80,102,144,.1)
+    .customers
+        p
+            color: #869ab8
+            margin: auto
+            padding-top: 25px
+    .slider
+        overflow: hidden
+        background-color: #f0f0f0
+        .slider-desc
+            display: flex
+            align-items: center
+            ul
+                li
+                    svg
+                        padding-bottom: 30px
+                    p
+                        line-height: 30px
+                    span
+                        font-size: 9pt
+                        color: #869ab8
+    .business
+        .business-desc
+            ul
+                li
+                    h3
+                        width: 100%
+                        font-size: 24pt
+                        display: flex
+                        flex-wrap: wrap
+                        span
+                            padding-top: 10px
+                            width: 100%
+                            color: #335eea
+                    >p
+                        width: 85%
+                        line-height: 35px
+                        font-size: 21px
+                        color: #506690
+                        padding: 30px 0
+                    .business-summery
+                        ul
+                            display: flex
+                            li
+                                width: 33%
+                                h3
+                                    font-size: 16pt
+                                p
+                                    padding: 8px 0
+                                    
+        .business-img
+            figure
+                img
+                    width: 100%
+    .plan-disgn
+        color: #335eea
+        background-color: #335eea1a
+        border-radius: 50px
+        padding: 4px 12px
+    .pricing
+        .pricing-desc
+            width: 80%
+            margin: auto
+            text-align: center
+            padding-bottom: 70px
+            h3
+                font-size: 30pt
+            p
+                font-size: 16pt
+                line-height: 30px
+                padding: 25px 0
+                color: #161c2d
+                
+        .pricing-plans
+            display: flex
+            align-items: center
+            .plan-standard
+                background-color: #fff
+                border-radius: 5px
+                ul
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                    flex-wrap: wrap
+                    li
+                        width: 70%
+                        text-align: center
+                        .plan-offer
+                            h3
+                                sup
+                                    font-size: 30px
+                                span
+                                    font-size: 60px
+                                    color: #000
+                                sub
+                                    font-size: 25px
+                            span
+                                color: #869ab8
+                        .plan-list
+                            ul
+                                li
+                                    width: 100%
+                                    display: flex
+                                    align-items: center
+                                    text-align: left
+                                    padding: 10px 0
+                                    i
+                                        width: 20px
+                                        height: 20px
+                                        line-height: 20px
+                                        text-align: center
+                                        border-radius: 50%
+                                        background-color: #e8f5f2
+                                        color: #42ba96
+                                        margin-right: 20px
+                                        font-size: 15px
+                                    p
+                                        color: #161c2d
+                                        font-size: 17px
+                a
+                    width: 100%!important
+                    display: flex
+                    justify-content: center
+                    line-height: 50px
+                    color: #fff
+                    background-color: #335eea
+                    padding: 10px 0
+                    border-radius: 0px 0px 5px 5px
+            .plan-enterprise
+                background-color: #fefefe
+                border-radius: 5px
+                ul
+                    padding: 0px 20px
+                    li
+                        text-align: center
+                        p
+                            font-size: 21px
+                            color: #869ab8
+                            padding: 100px 0
+                            line-height: 35px
+                a
+                    width: 100%!important
+                    display: flex
+                    justify-content: center
+                    line-height: 50px
+                    color: #506690
+                    background-color: #d9e2ef
+                    padding: 10px 0
+                    border-radius: 0px 0px 5px 5px
+    .questions
+        padding-top: 80px
+        display: flex
+        div
+            ul
+                display: flex
+                li
+                    i
+                        width: 30px
+                        height: 30px
+                        line-height: 30px
+                        text-align: center
+                        background-color: #42ba96
+                        color: #fff
+                        border-radius: 50%
+                        padding: 10px
+                        margin-right: 20px
+                    h3
+                        font-size: 20px
+                        color: #fff
+                    p
+                        line-height: 30px
+                        font-size: 18px
+                        padding-top: 10px
+                        color: #869ab8
+    .started
+        padding: 70px 0
+        text-align: center
+        span
+            color: #506690
+            background-color: #5066901a
+            padding: 5px 13px
+            border-radius: 50px
+        h3
+            font-size: 44px
+            color: #fff
+        p
+            color: #869ab8
+            font-size: 20px
+        a
+            color: #fff
+            background-color: #42ba96
+            padding: 15px 25px
+            border-radius: 5px
+    footer
+        background-color: #f1f4f8
+        div
+            .logo-social
+                ul
+                    li
+                        a
+                            color: #869ab8
+                        p
+                            color: #506690
+                            font-size: 18px
+                    .socials
+                        display: flex
+                        i
+                            color: #869ab8
+            .footer-left-list , .footer-right-list
+                ul
+                    li
+                        padding-bottom: 15px
+                        h6
+                            font-size: 13px
+                            color: #506690
+                            margin-bottom: 10px
+                        a
+                            font-size: 18px
+                            color: #869ab8
+            
