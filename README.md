@@ -2,7 +2,7 @@
 
 **i'm made lankit page with my html and css skill**
 
-- [Demo Project](https://setpmn.github.io/landing/)
+- [Demo Project](https://setpmn.github.io/landkit/)
 
 - Developed by peyman farhadi
 
